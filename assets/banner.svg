@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Don Chispa</title>
+  <desc id="desc">A dark banner with an amber lightning bolt and the words Don Chispa, sin humo con pruebas.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#090b12"/>
+      <stop offset="0.55" stop-color="#16101d"/>
+      <stop offset="1" stop-color="#24110b"/>
+    </linearGradient>
+    <linearGradient id="bolt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff3a6"/>
+      <stop offset="0.45" stop-color="#ffb21a"/>
+      <stop offset="1" stop-color="#ff5b1a"/>
+    </linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="13" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffb21a" stroke-opacity="0.07"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="320" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="28" fill="url(#grid)"/>
+  <circle cx="176" cy="160" r="100" fill="#ff8a1a" opacity="0.08"/>
+  <path d="M190 42L106 177h59l-24 101 104-151h-62z" fill="url(#bolt)" filter="url(#glow)"/>
+  <text x="305" y="151" fill="#fff7e8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="78" font-weight="800" letter-spacing="2">DON CHISPA</text>
+  <text x="310" y="208" fill="#ffbd54" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="25" letter-spacing="4">SIN HUMO · CON PRUEBAS</text>
+  <path d="M310 231h620" stroke="#ff8a1a" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+  <circle cx="963" cy="231" r="5" fill="#ffbd54"/>
+</svg>
